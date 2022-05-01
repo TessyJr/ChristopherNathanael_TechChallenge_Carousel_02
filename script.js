@@ -1,15 +1,13 @@
 let slidePosition = 0;
-const slides = document.getElementsByClassName("carouselItem");
-const dots = document.getElementsByClassName("dot");
-const totalSlides = slides.length;
+let slides = document.querySelectorAll(".carouselItem");
+let dots = document.querySelectorAll(".dot");
+let totalSlides = slides.length;
 
-document.getElementById("carouselNext").addEventListener("click", function () {
-  console.log("next");
+document.querySelector("#carouselNext").addEventListener("click", function () {
   nextSlide();
 });
 
-document.getElementById("carouselPrev").addEventListener("click", function () {
-  console.log("prev");
+document.querySelector("#carouselPrev").addEventListener("click", function () {
   prevSlide();
 });
 
